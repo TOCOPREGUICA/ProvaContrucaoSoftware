@@ -28,5 +28,13 @@ public class PlanoRequestDTO {
     public double getMensalidade() {
         return mensalidade;
     }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setMensalidade(double mensalidade) {
+        this.mensalidade = mensalidade;
+    }
        
 }

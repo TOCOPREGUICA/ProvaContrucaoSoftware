@@ -9,7 +9,7 @@ package com.senai.academia.espinafre.enuns;
  * @author Cansei2
  */
 public enum Nivel {
-    Iniciante,
-    Intermediario,
-    Avançado,
+    INICIANTE,
+    INTERMEDIARIO, 
+    AVANCADO,
 }

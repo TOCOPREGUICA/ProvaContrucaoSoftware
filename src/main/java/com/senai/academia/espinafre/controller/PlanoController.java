@@ -40,7 +40,7 @@ public class PlanoController {
             @ApiResponse(responseCode = "201", description = "plano criado com sucesso"),
             @ApiResponse(responseCode = "400", description = "Dados de entrada inválidos")
     })
-    @PostMapping
+    @PostMapping(produces = "application/json")
     public ResponseEntity<PlanoResponseDTO> criarPlano(@RequestBody @Valid PlanoRequestDTO requestDTO) {
         PlanoResponseDTO responseDTO = planoService.salvar(requestDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(responseDTO);

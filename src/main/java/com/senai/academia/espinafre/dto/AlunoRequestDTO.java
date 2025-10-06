@@ -42,6 +42,22 @@ public class AlunoRequestDTO {
     public Long getPlanoId() {
         return planoId;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public void setPlanoId(Long planoId) {
+        this.planoId = planoId;
+    }
     
     
 }

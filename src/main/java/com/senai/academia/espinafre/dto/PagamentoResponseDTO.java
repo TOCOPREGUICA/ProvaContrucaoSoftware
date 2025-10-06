@@ -29,6 +29,54 @@ public class PagamentoResponseDTO {
         this.statusPagamento = statusPagamento;
         this.alunoId = alunoId;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public LocalDate getDataAtribuido() {
+        return dataAtribuido;
+    }
+
+    public void setDataAtribuido(LocalDate dataAtribuido) {
+        this.dataAtribuido = dataAtribuido;
+    }
+
+    public double getValorPago() {
+        return valorPago;
+    }
+
+    public void setValorPago(double valorPago) {
+        this.valorPago = valorPago;
+    }
+
+    public TipoPagamento getTipoPagamento() {
+        return tipoPagamento;
+    }
+
+    public void setTipoPagamento(TipoPagamento tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
+    }
+
+    public StatusPagamento getStatusPagamento() {
+        return statusPagamento;
+    }
+
+    public void setStatusPagamento(StatusPagamento statusPagamento) {
+        this.statusPagamento = statusPagamento;
+    }
+
+    public Long getAlunoId() {
+        return alunoId;
+    }
+
+    public void setAlunoId(Long alunoId) {
+        this.alunoId = alunoId;
+    }
     
     
 }

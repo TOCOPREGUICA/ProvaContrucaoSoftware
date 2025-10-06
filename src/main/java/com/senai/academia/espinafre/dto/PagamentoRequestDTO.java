@@ -40,6 +40,22 @@ public class PagamentoRequestDTO {
     public Long getAlunoId() {
         return alunoId;
     }
+
+    public void setValorPago(double valorPago) {
+        this.valorPago = valorPago;
+    }
+
+    public void setTipoPagamento(String tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setAlunoId(Long alunoId) {
+        this.alunoId = alunoId;
+    }
     
     
     

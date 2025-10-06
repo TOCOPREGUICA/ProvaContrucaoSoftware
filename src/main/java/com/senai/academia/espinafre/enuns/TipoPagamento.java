@@ -9,8 +9,8 @@ package com.senai.academia.espinafre.enuns;
  * @author Cansei2
  */
 public enum TipoPagamento {
-    Dinheiro,
-    Pix,
-    Debito,
-    Credito
+    DINHEIRO,
+    PIX,
+    DEBIDO,
+    CREDITO
 }

@@ -12,7 +12,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
@@ -48,12 +47,8 @@ public class Aluno {
     @JoinColumn(name = "plano_id")
     private Plano plano;
     
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(
-        name = "Aluno_Treino",
-        joinColumns = @JoinColumn(name = "aluno_id"),
-        inverseJoinColumns = @JoinColumn(name = "treino_id")
-    )
+    
+    @ManyToMany(mappedBy = "alunos", fetch = FetchType.LAZY)
     private List<Treino> treinos;
     
     @OneToMany(mappedBy = "aluno", fetch = FetchType.LAZY, cascade = CascadeType.ALL)

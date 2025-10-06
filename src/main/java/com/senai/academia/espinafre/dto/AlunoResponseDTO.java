@@ -31,4 +31,62 @@ public class AlunoResponseDTO {
         this.planoId = planoId;
         this.treinosIds = treinosIds;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
+    public Long getPlanoId() {
+        return planoId;
+    }
+
+    public void setPlanoId(Long planoId) {
+        this.planoId = planoId;
+    }
+
+    public List<Long> getTreinosIds() {
+        return treinosIds;
+    }
+
+    public void setTreinosIds(List<Long> treinosIds) {
+        this.treinosIds = treinosIds;
+    }
+    
+    
 }
